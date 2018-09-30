@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
+.header
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font: 20px 'Raleway' ;
+    text-transform: uppercase;
+    background: #131519;
+}
+
+/*.rt-auto
+{
+	margin-right: auto ;
+}*/
+
+.logo-link
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+    min-width: 190px;
+    margin-left: -40px;
+    padding-left: 35px;
+    transform: skew(-15deg,0);
+    background: #0764b4;
+    transition: background-color .25s;
+}
+
+.logo-link:hover
+{
+	background: #087ce0 ;
+}
+
+a
+{	text-decoration: none ;
+}
+
+.fl
+{	margin : 0.5em 0.4em ;
+	transform: skew(15deg, 0) ;
+}
+
+.logo-link div
+{
+	height: 80px ;
+	width: 105px ;
+	transform: skew(15deg,0);
+    background: url('./header.jpg') no-repeat 50%;
+    background-size: contain;
+}
+
+.nav-link
+{
+	display: flex;
+    background: #131519;
+    align-items: center;
+    justify-content: center;
+}
+
+.link
+{	margin : 0 0.1em ;
+	padding-left: 0.5em;
+    border-bottom: 1px solid #17191d;
+    color: #fff;
+    min-width: 9vw ;
+    min-height: 2.5em ;
+    font: 32px 'Teko';
+    text-transform: uppercase;
+    transition: background-color .25s;
+    transform: skew(-15deg, 0) ;
+}
+
+.link:hover
+{
+	background-color: rgba(102, 162, 214, 0.6) ; 
+}
+
+[aria-current="true"]
+{
+	background-color: rgba(102, 162, 214, 0.6) ;
+	border-bottom: 2px solid #0764b4 ;	
+}
+
+.download
+{	position: fixed ;
+	border-color: #e79544;
+    outline-color: #f0b94e;
+    background: #ef9332;
+    background: linear-gradient(to bottom right,#f8aa53,#ef9332,#f8aa53);
+    text-shadow: #bf5915 2px 2px;
+    min-width: 10vw ;
+    transition: background-color .25s;
+    min-height: 90px ;
+    right : 0 ;
+}
+
+.dl-text
+{	color : white ;
+	font: 24px 'Teko';
+	margin : 1em 0.6em ;
+}
+
+.download:hover
+{
+	
+}
