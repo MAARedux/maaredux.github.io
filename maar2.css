@@ -1,0 +1,17 @@
+/* After .pic div*/
+
+.updates
+{	max-width: 1920px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.big-box:hover 
+{	border-color: #b3e1ff;
+    box-shadow: 0 0 32px 16px rgba(28,95,151,.35), inset 0 0 32px 16px rgba(28,95,151,.35);
+}
+
+.big-box
+{	border: 2px solid transparent;
+    transition: border-color .25s,box-shadow .25s;
+}

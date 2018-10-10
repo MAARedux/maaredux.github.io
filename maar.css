@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Teko');
 
+.App
+{   background-color: #080505 ;
+    color : white ;
+}
+
 .header
 {
     display: flex;
@@ -11,11 +16,6 @@
     text-transform: uppercase;
     background: #131519;
 }
-
-/*.rt-auto
-{
-	margin-right: auto ;
-}*/
 
 .logo-link
 {
@@ -91,21 +91,95 @@ a
 	border-color: #e79544;
     outline-color: #f0b94e;
     background: #ef9332;
-    background: linear-gradient(to bottom right,#f8aa53,#ef9332,#f8aa53);
     text-shadow: #bf5915 2px 2px;
     min-width: 10vw ;
-    transition: background-color .25s;
+    transition: background .25s;
     min-height: 90px ;
     right : 0 ;
+    letter-spacing: 0.2em ;
 }
 
 .dl-text
 {	color : white ;
 	font: 24px 'Teko';
-	margin : 1em 0.6em ;
+	margin : 1.1em 0.6em ;
+    text-align: center;
 }
 
 .download:hover
 {
-	
+	background: #f48c18 ;
+    cursor : pointer ;
+}
+
+.pic
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 156.25vw;
+    padding-top: 90vw;
+    background: #333 url('./use.png') ;
+    background-repeat:  no-repeat ;
+    background-size: 100% auto;
+}
+
+@media (min-width: 640px) 
+{   .pic 
+    {
+        height: calc(100vh + 150px);
+        padding-top: 36vw;
+        background-image: url('./use.png');
+    }
+}
+
+.watch
+{   position : relative ;
+    margin: 40px 20px;
+    width: 280px;
+}
+
+.watch:before
+{
+    content: " ";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    border: 20px solid;
+    border-image: url('./border2.png') 40 repeat;
+}
+
+.cont
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.wv-text
+{   position: relative; 
+    top : 1.1em ;   
+}
+
+#wv
+{   /*position: fixed ;*/
+    border-color: #5abff3 ;
+    outline-color: #4891eb;
+    background: #468dea;
+    text-shadow: #2b4359 2px 2px;
+    /*min-width: 10vw ;
+    transition: background .25s;
+    min-height: 90px ;
+    right : 0 ;*/
+}
+
+/*h1
+{   font-family: 'Teko' ;
+}*/
+
+#wv:hover
+{
+    background : #307ee5 ;
 }
