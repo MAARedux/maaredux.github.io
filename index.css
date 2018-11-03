@@ -79,7 +79,7 @@ a
 .back
 {	position: fixed ;
 	z-index : -1;
-	background: url('./entry.png') ;
+	background: url('./images/entry.png') ;
 	background-repeat: no-repeat;
 	background-size: 100% 100% ; 
 	height : 100% ;

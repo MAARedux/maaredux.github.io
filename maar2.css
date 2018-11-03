@@ -1,9 +1,16 @@
 /* After .pic div*/
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
 .updates
 {	max-width: 1920px;
     margin: 20px auto;
     padding: 0 20px;
+    font-family: 'Teko' ;
+    letter-spacing: 0.4em ;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
 .big-box:hover 
@@ -14,4 +21,48 @@
 .big-box
 {	border: 2px solid transparent;
     transition: border-color .25s,box-shadow .25s;
+}
+
+.footer
+{	padding: 0 20px;
+    font-family: 'Teko' ;
+	letter-spacing: 0.4em ;
+    text-transform: uppercase;
+    font-weight: lighter ;
+    display: flex ;
+    flex-flow: row ;
+    justify-content: space-between;
+    align-items : flex-start;
+    background-color: #0d1013 ;
+    color : #888 ;
+}
+
+.ft-text , .log-footer
+{	min-width: 30vw ;
+	margin : 10px ;
+}
+
+.link-text
+{
+	font-family : 'Raleway' ;
+	letter-spacing: 1px ;
+	text-transform: none;
+	font-size: 8px ;
+	text-align : right;
+}
+
+.links
+{	text-align: right;
+	letter-spacing: 3px ;
+	display: flex;
+	flex-flow: column wrap ;
+}
+
+@media screen only and (min-width: 480px)
+{
+	.footer
+	{
+		position : fixed ;
+		bottom : 0 ;
+	}
 }

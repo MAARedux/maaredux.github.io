@@ -4,6 +4,7 @@
 body
 {   background-color: #080505 ;
     color : white ;
+    margin : 0 ;
 }
 
 .header
@@ -45,7 +46,7 @@ a
 	transform: skew(15deg, 0) ;
 }
 
-.logo-link div
+.logo-link div 
 {
 	height: 80px ;
 	width: 105px ;
@@ -117,17 +118,17 @@ a
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 156.25vw;
-    padding-top: 90vw;
+    min-height: 310px ;
+    padding-top: 75vw;
     background: #333 url('./images/use.png') ;
     background-repeat:  no-repeat ;
     background-size: 100% auto;
 }
 
-@media (min-width: 640px) 
+@media only screen and (max-width: 640px) 
 {   .pic 
     {
-        height: calc(100vh + 150px);
+        height: calc(100vh + 175px);
         padding-top: 36vw;
         background-image: url('./images/use.png');
     }
@@ -135,7 +136,7 @@ a
 
 .watch
 {   position : relative ;
-    margin: 40px 20px;
+    margin: 3em 1.5em;
     width: 280px;
 }
 
